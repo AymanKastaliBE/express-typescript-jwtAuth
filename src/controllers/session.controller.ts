@@ -32,7 +32,8 @@ export function createSessionController(req: Request, res: Response) {
     maxAge: 3.154e10, // 1 year
     httpOnly: true,
   });
-
+  console.log('AccessToken:', accessToken);
+  console.log('RefreshToken:', refreshToken);
   // send user back
   return res.send(session);
 }
