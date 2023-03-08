@@ -13,10 +13,10 @@ In order to test this API, you have to follow the steps listed below:
     "valid": true,   
     "name": "Ayman Kastali"   
 }.   
-8- Open cookies on the right side, you will get two cookies: accessToken and refreshToken, those cookies will carry the values of jwt tokens plus some extra details.   
-9- AccessToken and RefreshToken values will prompted in the console, copy the access token value to use later.   
-10- Do GET request to URL `localhost:<YOUR-PORT>/api/get-session`, and open Authorization panel then select Bearer Token and paste accessToken value, then hit send.   
-11- You will get a response as shown below:   
+9- Open cookies on the right side, you will get two cookies: accessToken and refreshToken, those cookies will carry the values of jwt tokens plus some extra details.   
+10- AccessToken and RefreshToken values will prompted in the console, copy the access token value to use later.   
+11- Do GET request to URL `localhost:<YOUR-PORT>/api/get-session`, and open Authorization panel then select Bearer Token and paste accessToken value, then hit send.   
+12- You will get a response as shown below:   
 {   
     "email": "ayman@test.com",   
     "name": "Ayman Kastali",   
@@ -24,5 +24,5 @@ In order to test this API, you have to follow the steps listed below:
     "iat": 1678285238,   
     "exp": 1678285248   
 }.   
-12- You will still have access to this URL as long as the accessToken in valid, once its expired, a new accessToken will be generated using refreshToken, and you will still have access to this URL until refreshToken is expired (accessToken expires in 10 seconds - refreshToken expires in 20 seconds in this code).   
-13- Do DELETE request to URL `localhost:<YOUR-PORT>/api/delete-session` to delete the session and empty the values of accessToken and refreshToken, and signout.   
+13- You will still have access to this URL as long as the accessToken in valid, once its expired, a new accessToken will be generated using refreshToken, and you will still have access to this URL until refreshToken is expired (accessToken expires in 10 seconds - refreshToken expires in 20 seconds in this code).   
+14- Do DELETE request to URL `localhost:<YOUR-PORT>/api/delete-session` to delete the session and empty the values of accessToken and refreshToken, and signout.   
