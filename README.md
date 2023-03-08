@@ -1,4 +1,4 @@
-In order to test this API, you have to follow the steps listed below:
+In order to test this API, you have to follow the steps listed below:\n
 1- Run command `npm install` to install the dependencies and create node_modules folder.
 2- Change the value of const accessTokenKey located in `src/utils/jwt.utils.ts` to a random secret key.
 3- Change the value of const port located in `srs/index.ts` to a port like (3000 or 4000).
